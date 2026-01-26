@@ -3,7 +3,7 @@ import "./App.css";
 import LandingRoom from "./components/landing-room/LandingRoom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Navbar,Container} from "react-bootstrap";
-import {Route} from 'react-router-dom'
+import {Routes, Route} from 'react-router-dom'
 import Home from "./components/homepage/home.js"
 import About from "./components/about/about.js"
 import Hat from "./components/homepage/HomeImage/TheHatfull.png"
@@ -21,6 +21,7 @@ function App() {
               width="30"
               height="30"
               className="d-inline-block align-top"
+              alt="Hat logo"
             />{" "}
             TriceraCops
           </Navbar.Brand>
@@ -30,9 +31,11 @@ function App() {
         </Container>
       </Navbar>
       <Container>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/play" component={LandingRoom} />
-        <Route exact path="/about" component={About} />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/play" element={<LandingRoom />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
         <br />
         <br />
       </Container>
