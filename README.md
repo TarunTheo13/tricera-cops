@@ -54,7 +54,7 @@ This project was created by a talented team of developers at Makers Academy:
 - [JooMin](https://github.com/jooomin) - Developer
 - [Masako](https://github.com/1ugia) - Artist & Developer
 - [Sean](https://github.com/SeanEmmers) - Developer
-- [Tarun (Theo Weisz)](https://github.com/TarunTheo13) - Developer
+- [Theo Weisz](https://github.com/TarunTheo13) - Developer
 
 ## 💡 Project Motivation
 
