@@ -1,8 +1,8 @@
 import { Routes, Route } from 'react-router-dom';
 import { Navbar, Container } from "react-bootstrap";
 import LandingRoom from "./components/landing-room/LandingRoom";
-import Home from "./components/homepage/Home";
-import About from "./components/about/About";
+import Home from "./components/homepage/Home.js";
+import About from "./components/about/About.js";
 import Hat from "./components/homepage/HomeImage/TheHatfull.png";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
