@@ -1,54 +1,107 @@
-# Tricera-COP 
+# 🦖 TriceraCops
 
-![dinocops](https://github.com/SeanEmmers/tricera-cops/blob/main/src/components/homepage/HomeImage/Home_Page_githug.png)
+A prehistoric murder mystery game where you play as a detective solving crimes in Dinoville!
 
-## Description
+![TriceraCops Game](https://github.com/SeanEmmers/tricera-cops/blob/main/src/components/homepage/HomeImage/Home_Page_githug.png)
 
-Our project is a Dino-Murder Mystery Single Player Game built using React & React router. 
+## 🎮 Play Now
 
-## How to Install & Use the Project
+**[🌐 Play TriceraCops Online](https://tricera-cops.vercel.app/)**
 
-### Play Online
-🎮 **[Play the game now on Vercel!](https://tricera-cops.vercel.app/)**
+## 📖 About
 
-The game is also published to Heroku: [Play on Heroku](https://tricera-cops.herokuapp.com/)
+TriceraCops is an interactive single-player detective game set in a dinosaur world. Players investigate a murder mystery by exploring crime scenes, collecting clues, and interrogating suspects to solve the case. Built as a React-based point-and-click adventure game, it combines storytelling with problem-solving gameplay.
 
-### Run Locally
-1. Git clone this repository
-2. Open the directory in your text editor
-3. Run `npm install` in the terminal to install the dependencies
-4. To start the game, run `npm start`
-5. Visit http://localhost:3000/
+## 🚀 Getting Started
 
-## What Technologies did We Use?
+### Prerequisites
+- Node.js v22 or higher
+- npm
 
-* React
-* React Router
-* JSX
-* BootStrap
+### Local Installation
 
-## Team Members
+```bash
+# Clone the repository
+git clone https://github.com/TarunTheo13/tricera-cops.git
 
-* [Camilla](https://github.com/camilla000)
-* [Craig](https://github.com/craigea92)
-* [Joomin](https://github.com/jooomin)
-* [Mas](https://github.com/1ugia)
-* [Sean](https://github.com/SeanEmmers)
-* [Tarun](https://github.com/TarunTheo13)  
+# Navigate to the project directory
+cd tricera-cops
 
-## What was Our Motivation?
+# Install dependencies
+npm install
 
-We were tasked with creating a game app from nothing and wanted to make something unique other cohorts hadn't tried before. It was a chance for us to combine our creativity with the skills we have developed over the last 12 weeks at Makers!
+# Start the development server
+npm start
 
-## What Did We Learn?
+# Visit http://localhost:3000 in your browser
+```
 
-Initially, we wanted to use the MERN stack for our project. However after serious issues getting the project up and running, we took a step back and realised that we were overcomplicating things. We learnt that it is important to start small and not overwhelm ourselves from the beginning.
+## 🛠️ Technologies Used
 
-Learning to use react and JSX was a huge undertaking in such a short amount of time. We overcame this by reaching out to coaches, self-led learning and a lot of Googling!  
+- **React 18** - Modern UI library with hooks
+- **React Router v6** - Client-side routing
+- **React Bootstrap** - Responsive UI components
+- **JSX** - Component markup
+- **CSS3** - Custom styling and animations
+- **Vercel** - Deployment and hosting
 
-## What Makes Our Project Stand Out?
+## 👥 Team Members
 
-It's unique, all the assets and code in our project are original and created by each and every team member. 
+This project was created by a talented team of developers at Makers Academy:
 
-We are especially thankful to Camilla & Mas for creating all of our image assets which gives our game it's unique look!
+- [Camilla Lima](https://github.com/camilla000) - Artist & Developer
+- [Craig](https://github.com/craigea92) - Developer
+- [JooMin](https://github.com/jooomin) - Developer
+- [Masako](https://github.com/1ugia) - Artist & Developer
+- [Sean](https://github.com/SeanEmmers) - Developer
+- [Tarun (Theo Weisz)](https://github.com/TarunTheo13) - Developer
 
+## 💡 Project Motivation
+
+We were challenged to create a game application from scratch and wanted to build something unique that other cohorts hadn't attempted before. This project was an opportunity to combine our creativity with the technical skills we developed over 12 weeks at Makers Academy!
+
+## 📚 What We Learned
+
+### Starting Small
+Initially, we wanted to use the MERN stack for our project. However, after encountering serious issues getting the project up and running, we took a step back and realized we were overcomplicating things. We learned that it's important to start small and not overwhelm ourselves from the beginning.
+
+### Rapid Learning
+Learning to use React and JSX was a huge undertaking in such a short amount of time. We overcame this challenge by:
+- Reaching out to coaches and mentors
+- Self-led learning and research
+- Collaborative problem-solving
+- A lot of Googling!
+
+### Recent Refactoring (2026)
+The codebase has been modernized with:
+- React 18 best practices
+- Removal of unnecessary React imports
+- Consistent component patterns and prop destructuring
+- Improved accessibility with proper alt attributes
+- Context API for state management
+- Modern routing with React Router v6
+
+## ✨ What Makes This Project Special
+
+### 100% Original
+All assets and code in our project are original and created by our team members. Every line of code, every image, and every game mechanic was crafted by us!
+
+### Unique Art Style
+Special thanks to **Camilla** and **Mas** for creating all of our custom image assets, which give our game its distinctive prehistoric look and feel!
+
+### Interactive Storytelling
+The game combines point-and-click adventure mechanics with detective work, creating an engaging narrative experience.
+
+## 📝 License
+
+This project was created as part of the Makers Academy curriculum.
+
+## 🙏 Acknowledgments
+
+- Makers Academy for the opportunity and guidance
+- Our coaches for their support and mentorship
+- All team members for their dedication and creativity
+
+---
+
+*Made with ❤️ by the TriceraCops team*
