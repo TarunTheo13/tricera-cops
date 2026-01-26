@@ -1,21 +1,17 @@
-import React from 'react'
-import './PopUp.css'
-import { Container, Row } from "react-bootstrap";
+import Popup from './PopUp';
 
-const LoosingPopup = (display) => {
-  return display.show ? (
-    <div className="losing-popup">
-      <Container>
-        <Row>
-            <div className="popup-inner">
-              {display.children}
-            </div>
-        </Row>
-      </Container>
-    </div>
-  ) : (
-    null
+// Legacy wrapper for backward compatibility
+const LosingPopup = ({ show, setShow, children }) => {
+  return (
+    <Popup 
+      show={show} 
+      setShow={setShow} 
+      variant="losing" 
+      showCloseButton={false}
+    >
+      {children}
+    </Popup>
   );
-}
+};
 
-export default LoosingPopup;
+export default LosingPopup;

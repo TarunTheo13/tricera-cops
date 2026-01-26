@@ -1,12 +1,11 @@
-import React from "react";
-import "./App.css";
+import { Routes, Route } from 'react-router-dom';
+import { Navbar, Container } from "react-bootstrap";
 import LandingRoom from "./components/landing-room/LandingRoom";
+import Home from "./components/homepage/Home";
+import About from "./components/about/About";
+import Hat from "./components/homepage/HomeImage/TheHatfull.png";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Navbar,Container} from "react-bootstrap";
-import {Routes, Route} from 'react-router-dom'
-import Home from "./components/homepage/home.js"
-import About from "./components/about/about.js"
-import Hat from "./components/homepage/HomeImage/TheHatfull.png"
+import "./App.css";
 
 
 function App() {

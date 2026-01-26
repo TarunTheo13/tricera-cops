@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from 'react';
 import RoomOneImage from "./landing-room-images/RoomOneChalk.png";
 import SpeechBubbleReuse from "../speech-bubble/SpeechBubbleReuse";
@@ -45,27 +44,27 @@ const LandingRoom = () => {
   return (
     <div className="LandingRoom">
       <div className="parent">
-        <img className="backgroundImage" src={RoomOneImage} alt="TriceraCop" />
-        <Fireplace fireplaceMethod = {setEnvelopeOne}/>
-        { showEnvelopeOne ? <EnvelopeOne letterTwo = {setNoteTwoAndJar} /> : null } 
-        { showEnvelopeOne ? <Horn /> : null}
-        { noteTwoAndJar ? <EnvelopeTwo letterContent = {<LetterTwoContent/>} /> : null }
-        { noteTwoAndJar ? <Jar jarMethod = {setEnvelopeThree}/> : null }
-        { showEnvelopeThree ? <Tooth /> : null}
-        { showEnvelopeThree ? <EnvelopeThree letterFour = {setNoteFourAndMirror}/> : null }
-        { noteFourAndMirror ? <EnvelopeFour letterContent = {<LetterFourContent/>} /> : null }
-        { noteFourAndMirror ? <Mirror mirrorMethod = {setEnvelopeFive}/> : null}
-        { showEnvelopeFive ? <EnvelopeFive letterSix = {setNoteSix} /> : null }
-        { noteSix ? <EnvelopeSix showCurtains = {setCurtains} /> : null }
-        { showCurtains ? <Curtains curtainMethod = {setNoteSevenAndFootprint} /> : null }
-        { showNoteSevenAndFootprint ? <Footprint/> : null }
-        { showNoteSevenAndFootprint ? <EnvelopeSeven showOutline = {setChalkOutline}/> : null }
-        { showChalkOutline ? <ChalkOutline showDinoSuspect = {setShowDino} showSuspects = {setShowSuspects} /> : null }
-        { showSuspects ? <Tiffany/> : null }
-        { showSuspects ? <Andy/> : null }
-        { showDinoSuspect ? <DinoSuspect showKey = {setKey} showSuspects = {setShowSuspects} showDoor = {setShowDoor}/> : null }
-        { showDoor ? <Door /> : null }
-        { showKey ? <Key/> : null }
+        <img className="backgroundImage" src={RoomOneImage} alt="TriceraCop Crime Scene" />
+        <Fireplace fireplaceMethod={setEnvelopeOne} />
+        {showEnvelopeOne && <EnvelopeOne letterTwo={setNoteTwoAndJar} />}
+        {showEnvelopeOne && <Horn />}
+        {noteTwoAndJar && <EnvelopeTwo letterContent={<LetterTwoContent />} />}
+        {noteTwoAndJar && <Jar jarMethod={setEnvelopeThree} />}
+        {showEnvelopeThree && <Tooth />}
+        {showEnvelopeThree && <EnvelopeThree letterFour={setNoteFourAndMirror} />}
+        {noteFourAndMirror && <EnvelopeFour letterContent={<LetterFourContent />} />}
+        {noteFourAndMirror && <Mirror mirrorMethod={setEnvelopeFive} />}
+        {showEnvelopeFive && <EnvelopeFive letterSix={setNoteSix} />}
+        {noteSix && <EnvelopeSix showCurtains={setCurtains} />}
+        {showCurtains && <Curtains curtainMethod={setNoteSevenAndFootprint} />}
+        {showNoteSevenAndFootprint && <Footprint />}
+        {showNoteSevenAndFootprint && <EnvelopeSeven showOutline={setChalkOutline} />}
+        {showChalkOutline && <ChalkOutline showDinoSuspect={setShowDino} showSuspects={setShowSuspects} />}
+        {showSuspects && <Tiffany />}
+        {showSuspects && <Andy />}
+        {showDinoSuspect && <DinoSuspect showKey={setKey} showSuspects={setShowSuspects} showDoor={setShowDoor} />}
+        {showDoor && <Door />}
+        {showKey && <Key />}
         <DinoCop />
         <SpeechBubble />
         <SpeechBubbleReuse />       

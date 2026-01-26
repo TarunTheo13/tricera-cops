@@ -1,11 +1,10 @@
-import React from "react";
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { Button } from "react-bootstrap";
 import LosingPopup from "../popup/LosingPopUp";
 import DoorGlow from "./door-images/DoorOrangeCropped.png";
 import DoorBasic from "./door-images/CroppedDoorFinal.png";
 import "./Door.css";
-import { Link } from 'react-router-dom'
-import { Button } from "react-bootstrap";
 
 const Door = () => {
   const [showPopup, setButtonPopup] = useState(false);
@@ -22,11 +21,11 @@ const Door = () => {
       />
       <LosingPopup show={showPopup} setShow={setButtonPopup}>
         <div>
-          <p> Thanks to you Dinoville is safe, for now... </p>
-          <p> Thank you for playing! </p>
-            <Link to = '/about'>
-              <Button> About the creators �</Button>
-            </Link>
+          <p>Thanks to you Dinoville is safe, for now...</p>
+          <p>Thank you for playing!</p>
+          <Link to='/about'>
+            <Button>About the creators</Button>
+          </Link>
         </div>
       </LosingPopup>
     </div>

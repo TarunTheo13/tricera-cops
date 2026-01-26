@@ -1,9 +1,7 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import { Container, Button, Col, Row } from "react-bootstrap";
-import "./home.css";
+import "./Home.css";
 import Poster from "./HomeImage/Home_Page.png";
-
 
 const Home = () => {
   return (
@@ -14,7 +12,7 @@ const Home = () => {
             <br />
             <br />
             <Link to="/play">
-              <img src={Poster} className="welcome" />
+              <img src={Poster} className="welcome" alt="TriceraCops game poster" />
               <br />
               <br />
               <div className="playButton">

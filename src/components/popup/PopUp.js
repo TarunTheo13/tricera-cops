@@ -1,30 +1,29 @@
-import React from 'react'
-import './PopUp.css'
-import { Container, Row, Col, CloseButton} from "react-bootstrap";
+import { Container, Row, Col, CloseButton } from "react-bootstrap";
+import './PopUp.css';
 
+const Popup = ({ show, setShow, children, variant = 'default', showCloseButton = true }) => {
+  if (!show) return null;
 
+  const popupClassName = variant === 'losing' ? 'losing-popup' : 'popup';
 
-const Popup = (display) => {
-  return display.show ? (
-    <div className="popup">
+  return (
+    <div className={popupClassName}>
       <Container>
         <Row>
-          <Col></Col>
-            <div className="popup-inner">
+          {variant === 'default' && <Col />}
+          <div className="popup-inner">
+            {showCloseButton && (
               <CloseButton
                 className="close-btn"
-                onClick={() => display.setShow(false)}
-              >
-                {" "}
-              </CloseButton>
-              {display.children}
-            </div>
+                onClick={() => setShow(false)}
+              />
+            )}
+            {children}
+          </div>
         </Row>
       </Container>
     </div>
-  ) : (
-    null
   );
-}
+};
 
-export default Popup
+export default Popup;

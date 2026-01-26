@@ -1,13 +1,11 @@
-import React from "react";
 import { Container, Button, Col, Row, Card } from "react-bootstrap";
-import "./about.css";
+import "./About.css";
 import camilla from "./aboutImages/camilla.jpg";
 import Craig from "./aboutImages/Craig.png";
 import Mas from "./aboutImages/Mas.jpg";
 import Sean from "./aboutImages/Sean.png";
 import JooMin from "./aboutImages/JooMin.jpg";
 import Tarun from "./aboutImages/Tarun.png";
-// import Poster from "./HomeImage/Home_Page.png";
 
 const About = () => {
   return (

@@ -2,7 +2,6 @@
   height: 4%;
   width: 4%;
   position: absolute;
-  transform: skewX(-0deg) skewY(0deg);
   border: none;
   outline: transparent;
 }

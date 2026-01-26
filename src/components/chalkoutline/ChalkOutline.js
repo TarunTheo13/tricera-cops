@@ -1,9 +1,8 @@
-import ChalkOutlineImage from "./chalkoutline-images/ChalkOutline.png";
-import ChalkOutlineGlow from ".//chalkoutline-images/ChalkOutlineGlow.png";
-import "./ChalkOutline.css";
-import React from "react";
-import Popup from "../popup/PopUp";
 import { useState } from 'react';
+import ChalkOutlineImage from "./chalkoutline-images/ChalkOutline.png";
+import ChalkOutlineGlow from "./chalkoutline-images/ChalkOutlineGlow.png";
+import Popup from "../popup/PopUp";
+import "./ChalkOutline.css";
 
 const ChalkOutline = (props) => {
   const [showPopup, setButtonPopup] = useState(false);
