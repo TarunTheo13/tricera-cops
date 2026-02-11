@@ -1,15 +1,18 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { usePostHog } from 'posthog-js/react'
 import { Button } from "react-bootstrap";
 import AndyImg from "./images/Andy.png";
 import LosingPopup from "../popup/LosingPopUp";
 import "./suspects.css";
 
 const Andy = () => {
+  const posthog = usePostHog()
   const [showPopup, setButtonPopup] = useState(false);
   const navigate = useNavigate();
 
   const clickHandler = () => {
+    posthog.capture('suspect_chosen', { suspect: 'andy', correct: false })
     setButtonPopup(true);
   };
 

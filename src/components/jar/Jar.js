@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { usePostHog } from 'posthog-js/react'
 import Popup from "../popup/PopUp";
 import SpeechBubbleReuse from "../speech-bubble/SpeechBubbleReuse";
 import JarGlow from "./jar-images/JarCroppedFinal.png";
@@ -8,10 +9,12 @@ import "./Jar.css";
 const BUBBLE_TEXT = "A pointy tooth, let's take a closer look. It looks like a T-rex tooth, it must be Tiffany's, which other carnivores could it be?! There was another letter stuffed in the vase too, let's read it!";
 
 const Jar = ({ jarMethod }) => {
+  const posthog = usePostHog()
   const [showPopup, setButtonPopup] = useState(false);
   const [speechBubble, setSpeechbubble] = useState(false);
 
   const handleJarClick = () => {
+    posthog.capture('clue_discovered', { clue: 'jar' })
     jarMethod(true);
     setButtonPopup(true);
     setSpeechbubble(true);

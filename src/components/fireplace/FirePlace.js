@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { usePostHog } from 'posthog-js/react'
 import FireplaceImage from "./fireplace-images/FirePlace.png";
 import FireplaceGlow from "./fireplace-images/FirePlaceGlow.png";
 import Popup from "../popup/PopUp";
@@ -8,10 +9,12 @@ import "./FirePlace.css";
 const BUBBLE_TEXT = "Someone was trying to get rid of that letter, what were they trying to hide? Let's check what it says.";
 
 const Fireplace = ({ fireplaceMethod }) => {
+  const posthog = usePostHog()
   const [showPopup, setButtonPopup] = useState(false);
   const [speechBubble, setSpeechbubble] = useState(false);
 
   const handleFireplaceClick = () => {
+    posthog.capture('clue_discovered', { clue: 'fireplace' })
     fireplaceMethod(true);
     setButtonPopup(true);
     setSpeechbubble(true);

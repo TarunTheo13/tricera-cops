@@ -1,9 +1,16 @@
 import { Link } from 'react-router-dom'
 import { Container, Button, Col, Row } from "react-bootstrap";
+import { usePostHog } from 'posthog-js/react'
 import "./Home.css";
 import Poster from "./HomeImage/Home_Page.png";
 
 const Home = () => {
+  const posthog = usePostHog()
+
+  const handlePlay = () => {
+    posthog.capture('game_started')
+  }
+
   return (
     <div>
       <Container>
@@ -11,7 +18,7 @@ const Home = () => {
           <Col>
             <br />
             <br />
-            <Link to="/play">
+            <Link to="/play" onClick={handlePlay}>
               <img src={Poster} className="welcome" alt="TriceraCops game poster" />
               <br />
               <br />

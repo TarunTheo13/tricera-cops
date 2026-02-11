@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { usePostHog } from 'posthog-js/react'
 import DinoImg from "./dino-images/triceCOP.png";
 import Popup from "../popup/PopUp";
 import SpeechBubbleReuse from "../speech-bubble/SpeechBubbleReuse";
@@ -7,10 +8,12 @@ import "./Dino.css";
 const BUBBLE_TEXT = "Argghhh! I can't believe you caught me! RAAWWWWRRR";
 
 const DinoSuspect = ({ showSuspects, showDoor, showKey }) => {
+  const posthog = usePostHog()
   const [showPopup, setButtonPopup] = useState(false);
   const [speechBubble, setSpeechbubble] = useState(false);
 
   const handleClick = () => {
+    posthog.capture('suspect_chosen', { suspect: 'dino_cop', correct: true })
     setButtonPopup(true);
     showSuspects(false);
     showDoor(true);

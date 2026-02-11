@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { usePostHog } from 'posthog-js/react'
 import CurtainsImage from "./curtain-images/Curtains.png";
 import CurtainsGlow from "./curtain-images/CurtainsGlow.png";
 import Popup from "../popup/PopUp";
@@ -8,10 +9,12 @@ import "./Curtains.css";
 const BUBBLE_TEXT = "Those look like heavy dinosaur footprints, Andy has a sizeable hoof... Look, there's another letter resting on the windowsill.";
 
 const Curtains = ({ curtainMethod }) => {
+  const posthog = usePostHog()
   const [showPopup, setButtonPopup] = useState(false);
   const [speechBubble, setSpeechbubble] = useState(false);
 
   const handleCurtainsClick = () => {
+    posthog.capture('clue_discovered', { clue: 'curtains' })
     curtainMethod(true);
     setButtonPopup(true);
     setSpeechbubble(true);

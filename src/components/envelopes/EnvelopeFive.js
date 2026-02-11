@@ -2,11 +2,13 @@ import EnvelopeBasic from "./envelope-images/Envelope.png";
 import EnvelopeGlow from "./envelope-images/EnvelopeGlow.png";
 import React from "react";
 import { useState } from 'react';
+import { usePostHog } from 'posthog-js/react'
 import SpeechBubbleReuse from "../speech-bubble/SpeechBubbleReuse";
 import Letter from "../letter/Letter";
 import "./envelope.css";
 
 const EnvelopeFive = ({letterSix}) => {
+  const posthog = usePostHog()
   const [displayingLetter, showLetter] = useState(false);
   const [speechBubble, setSpeechbubble] = useState(false);
 
@@ -30,6 +32,7 @@ const EnvelopeFive = ({letterSix}) => {
   }
 
   const clickHandler = () => {
+    posthog.capture('envelope_opened', { envelope: 5 })
     showLetter(true);
     setSpeechbubble(true);
     letterSix(true);

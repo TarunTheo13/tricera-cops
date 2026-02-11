@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { usePostHog } from 'posthog-js/react'
 import Popup from "../popup/PopUp";
 import MirrorBasic from "./mirror-images/basic-mirror.png";
 import MirrorGlow from "./mirror-images/highlighted-mirror.png";
@@ -8,10 +9,12 @@ import "./Mirror.css";
 const BUBBLE_TEXT = "Have these guys not heard of Dino-mail?";
 
 const Mirror = ({ mirrorMethod }) => {
+  const posthog = usePostHog()
   const [showPopup, setButtonPopup] = useState(false);
   const [speechBubble, setSpeechbubble] = useState(false);
 
   const handleMirrorClick = () => {
+    posthog.capture('clue_discovered', { clue: 'mirror' })
     setButtonPopup(true);
     mirrorMethod(true);
     setSpeechbubble(true);
