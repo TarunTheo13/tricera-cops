@@ -3,7 +3,6 @@
   height: auto;
   width: 45%;
   position: absolute;
-  /* min-width: 200px; */
   background: #dde3e8;
   display: block;
   margin: 30px;
@@ -11,7 +10,6 @@
   border-radius: 20px;
   border: 1px solid black;
   bottom: 100px;
-  /* left: 160px; */
   left: 20%;
   font-size: 0.92rem;
   text-align: center;
@@ -43,12 +41,7 @@
   right: 10px;
   text-align: center;
   margin-bottom: 3px;
-  /* border: 1px solid black; */
   font-size: medium;
-  /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); */
-  /* border-radius: 20px;
-  background: #6cb3a6;
-  border: 1.5px solid rgb(0, 0, 0); */
 }
 
 .close-btn {
@@ -59,10 +52,69 @@
   right: 10px;
   text-align: center;
   margin-bottom: 3px;
-  /* border: 1px solid black; */
   font-size: medium;
-  /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); */
-  /* border-radius: 20px;
-  background: #6cb3a6;
-  border: 1.5px solid rgb(0, 0, 0); */
+}
+
+/* ========== RESPONSIVE: TABLET / iPAD ========== */
+@media (max-width: 1024px) {
+  .bubble {
+    width: 55%;
+    left: 15%;
+    bottom: 60px;
+    font-size: 0.85rem;
+    padding: 18px 35px 0px 18px;
+    margin: 20px;
+  }
+}
+
+/* ========== RESPONSIVE: MOBILE ========== */
+@media (max-width: 767px) {
+  .bubble {
+    width: 80%;
+    left: 5%;
+    bottom: 30px;
+    font-size: 0.75rem;
+    padding: 12px 30px 0px 12px;
+    margin: 10px;
+    border-radius: 15px;
+  }
+
+  .pointer {
+    height: 14px;
+    width: 30px;
+    margin-top: -22px;
+  }
+
+  .small-btn {
+    width: 50px;
+    height: 30px;
+    bottom: 3px;
+    right: 5px;
+  }
+
+  .close-btn {
+    width: 25px;
+    height: 30px;
+    top: 3px;
+    right: 5px;
+  }
+}
+
+/* ========== RESPONSIVE: SMALL MOBILE ========== */
+@media (max-width: 480px) {
+  .bubble {
+    width: 88%;
+    left: 2%;
+    bottom: 15px;
+    font-size: 0.68rem;
+    padding: 8px 28px 0px 8px;
+    margin: 5px;
+    border-radius: 12px;
+  }
+
+  .pointer {
+    height: 10px;
+    width: 22px;
+    margin-top: -18px;
+  }
 }

@@ -5,7 +5,7 @@ import SpeechBubbleReuse from "../speech-bubble/SpeechBubbleReuse";
 import Letter from "../letter/Letter";
 import "./envelope.css";
 
-const BUBBLE_TEXT = "That letter never made it to me. If only... maybe I could have stopped this terrible tragedy. I didn't mention it as I wanted to maintain a professional standpoint, but Priya and I were good friends, she was such a special woman, shame about the people surrounding her. Personally I never trusted Tiffany, she is a violent flesh eater! With Priya gone she has full control over the business, seems like more than enough reason for a tyrannosaur to do such a thing. It seems there was another letter under the vase. Priya sure was organised...";
+const BUBBLE_TEXT = "That letter never made it to me. If only... maybe I could have stopped this terrible tragedy. I didn't mention it as I wanted to maintain a professional standpoint, but Priya and I were good friends, she was such a special woman, shame about the people surrounding her. Personally I never trusted Tiffany, she is a violent flesh-eater! With Priya gone she has full control over the business, seems like more than enough reason for a tyrannosaur to do such a thing. It seems there was another letter under the vase. Priya sure was organised...";
 
 const LETTER_CONTENT = (
   <div>

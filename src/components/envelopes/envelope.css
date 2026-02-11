@@ -1,4 +1,4 @@
-.envelopeOutline{
+.envelopeOutline {
   height: 4%;
   width: 4%;
   position: absolute;
@@ -6,37 +6,89 @@
   outline: transparent;
 }
 
-#envelopeOne{
+#envelopeOne {
   top: 2%;
   left: 15%;
 }
 
-#envelopeTwo{
+#envelopeTwo {
   top: 2%;
   left: 20%;
 }
 
-#envelopeThree{
+#envelopeThree {
   top: 2%;
   left: 25%;
 }
 
-#envelopeFour{
+#envelopeFour {
   top: 2%;
   left: 30%;
 }
 
-#envelopeFive{
+#envelopeFive {
   top: 2%;
   left: 35%;
 }
 
-#envelopeSix{
+#envelopeSix {
   top: 2%;
   left: 40%;
 }
 
-#envelopeSeven{
+#envelopeSeven {
   top: 2%;
   left: 45%;
+}
+
+/* ========== RESPONSIVE: TABLET / iPAD ========== */
+@media (max-width: 1024px) {
+  .envelopeOutline {
+    height: 5.5%;
+    width: 5.5%;
+  }
+}
+
+/* ========== RESPONSIVE: MOBILE ========== */
+@media (max-width: 767px) {
+  .envelopeOutline {
+    height: 7%;
+    width: 7%;
+  }
+
+  #envelopeOne {
+    left: 5%;
+  }
+
+  #envelopeTwo {
+    left: 13%;
+  }
+
+  #envelopeThree {
+    left: 21%;
+  }
+
+  #envelopeFour {
+    left: 29%;
+  }
+
+  #envelopeFive {
+    left: 37%;
+  }
+
+  #envelopeSix {
+    left: 45%;
+  }
+
+  #envelopeSeven {
+    left: 53%;
+  }
+}
+
+/* ========== RESPONSIVE: SMALL MOBILE ========== */
+@media (max-width: 480px) {
+  .envelopeOutline {
+    height: 9%;
+    width: 9%;
+  }
 }

@@ -5,7 +5,7 @@ import JarGlow from "./jar-images/JarCroppedFinal.png";
 import JarBasic from "./jar-images/CroppedJarFinal.png";
 import "./Jar.css";
 
-const BUBBLE_TEXT = "A pointy tooth, let's take a closer look. It looks like a T-rex tooth, it must be Tiffany's, which other carnivore's could it be?! There was another letter stuffed in the vase too, let's read it!";
+const BUBBLE_TEXT = "A pointy tooth, let's take a closer look. It looks like a T-rex tooth, it must be Tiffany's, which other carnivores could it be?! There was another letter stuffed in the vase too, let's read it!";
 
 const Jar = ({ jarMethod }) => {
   const [showPopup, setButtonPopup] = useState(false);

@@ -9,14 +9,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 3000; 
+  z-index: 3000;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
 .losing-popup {
   backdrop-filter: blur(5px);
   position: absolute;
-  z-index: 1000;
   top: 0%;
   left: 0%;
   width: 100%;
@@ -26,18 +25,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 3000; 
+  z-index: 3000;
 }
 
 .popup-inner {
   position: relative;
   padding: 25px 75px 25px 25px;
-  height: 40%;
+  height: auto;
+  min-height: 30%;
   right: 16px;
   text-align: center;
   z-index: 3000;
   border-radius: 25px;
   background-color: white;
+  max-height: 85vh;
+  overflow-y: auto;
 }
 
 .close-btn {
@@ -47,7 +49,67 @@
 }
 
 .gameinstruction {
-    font-style: italic;
-    color: gray;
-    font-size: 14px;
+  font-style: italic;
+  color: gray;
+  font-size: 14px;
+}
+
+/* ========== RESPONSIVE: TABLET / iPAD ========== */
+@media (max-width: 1024px) {
+  .popup,
+  .losing-popup {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .popup-inner {
+    padding: 20px 50px 20px 20px;
+    min-height: auto;
+    right: 0;
+  }
+}
+
+/* ========== RESPONSIVE: MOBILE ========== */
+@media (max-width: 767px) {
+  .popup,
+  .losing-popup {
+    padding-left: 3%;
+    padding-right: 3%;
+    position: fixed;
+    height: 100vh;
+    align-items: flex-start;
+    padding-top: 8vh;
+  }
+
+  .popup-inner {
+    padding: 16px 35px 16px 16px;
+    min-height: auto;
+    right: 0;
+    border-radius: 18px;
+    max-height: 80vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .gameinstruction {
+    font-size: 12px;
+  }
+}
+
+/* ========== RESPONSIVE: SMALL MOBILE ========== */
+@media (max-width: 480px) {
+  .popup,
+  .losing-popup {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .popup-inner {
+    padding: 12px 28px 12px 12px;
+    border-radius: 14px;
+  }
+
+  .gameinstruction {
+    font-size: 11px;
+  }
 }

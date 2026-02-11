@@ -18,7 +18,7 @@ body {
 
 .backgroundImage {
   height: 100vh;
-  width: 99.9%;
+  width: 100%;
   position: relative;
   top: 0;
   left: 0;
@@ -40,20 +40,55 @@ body {
   z-index: inherit;
 }
 
-.bubble {
-  z-index: 1000;
-  height: auto;
-  width: 45%;
-  position: absolute;
-  background: #dde3e8;
-  display: block;
-  margin: 30px;
-  padding: 15px 65px 15px 15px;
-  border-radius: 20px;
-  border: 1px solid black;
-  bottom: 100px;
-  left: 20%;
-  font-size: 1rem;
-  text-align: center;
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+/* ========== RESPONSIVE: TABLET / iPAD (768px - 1024px) ========== */
+@media (max-width: 1024px) {
+  .navbar {
+    margin-bottom: 20px;
+  }
+
+  .backgroundImage {
+    height: auto;
+    width: 100%;
+    min-height: 45vh;
+  }
+
+  .LandingRoom {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+}
+
+/* ========== RESPONSIVE: MOBILE (< 768px) ========== */
+@media (max-width: 767px) {
+  .navbar {
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+  }
+
+  .backgroundImage {
+    height: auto;
+    width: 100%;
+    min-height: 35vh;
+  }
+
+  .LandingRoom {
+    margin-left: -12px;
+    margin-right: -12px;
+  }
+
+  .parent {
+    overflow: visible;
+  }
+}
+
+/* ========== RESPONSIVE: SMALL MOBILE (< 480px) ========== */
+@media (max-width: 480px) {
+  .navbar {
+    margin-bottom: 5px;
+    font-size: 0.82rem;
+  }
+
+  .backgroundImage {
+    min-height: 28vh;
+  }
 }

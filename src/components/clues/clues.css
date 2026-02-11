@@ -77,3 +77,107 @@
   border: 2px solid black;
   z-index: 2000;
 }
+
+/* ========== RESPONSIVE: TABLET / iPAD ========== */
+@media (max-width: 1024px) {
+  .tooth-large,
+  .horn-large,
+  .footprint-large,
+  .key-large {
+    width: 40%;
+    height: 45%;
+    left: 30%;
+    top: 28%;
+  }
+
+  .tooth-small {
+    height: 12%;
+    width: 8%;
+  }
+
+  .horn-small {
+    height: 8%;
+    width: 7%;
+  }
+
+  .footprint-small {
+    height: 7%;
+    width: 10%;
+  }
+
+  .key-small {
+    height: 9%;
+    width: 9%;
+  }
+}
+
+/* ========== RESPONSIVE: MOBILE ========== */
+@media (max-width: 767px) {
+  .tooth-large,
+  .horn-large,
+  .footprint-large,
+  .key-large {
+    width: 60%;
+    height: 40%;
+    left: 20%;
+    top: 30%;
+    border-radius: 8px;
+  }
+
+  .tooth-small {
+    height: 10%;
+    width: 10%;
+    right: 8%;
+  }
+
+  .horn-small {
+    height: 7%;
+    width: 9%;
+    right: 1%;
+  }
+
+  .footprint-small {
+    height: 6%;
+    width: 11%;
+    right: 20%;
+  }
+
+  .key-small {
+    height: 8%;
+    width: 10%;
+    right: 32%;
+  }
+}
+
+/* ========== RESPONSIVE: SMALL MOBILE ========== */
+@media (max-width: 480px) {
+  .tooth-large,
+  .horn-large,
+  .footprint-large,
+  .key-large {
+    width: 75%;
+    height: 35%;
+    left: 12%;
+    top: 32%;
+  }
+
+  .tooth-small {
+    height: 9%;
+    width: 12%;
+  }
+
+  .horn-small {
+    height: 6%;
+    width: 10%;
+  }
+
+  .footprint-small {
+    height: 5%;
+    width: 12%;
+  }
+
+  .key-small {
+    height: 7%;
+    width: 11%;
+  }
+}

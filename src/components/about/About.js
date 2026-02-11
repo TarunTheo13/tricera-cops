@@ -12,7 +12,7 @@ const About = () => {
     <div>
       <Container>
         <Row>
-          <Col>
+          <Col xs={12} sm={6} md={4}>
             <br />
             <br />
 
@@ -32,7 +32,7 @@ const About = () => {
             </Card>
           </Col>
 
-          <Col>
+          <Col xs={12} sm={6} md={4}>
             <br />
             <br />
             <Card className="cards">
@@ -40,8 +40,8 @@ const About = () => {
               <Card.Body>
                 <Card.Title>Craig</Card.Title>
                 <Card.Text>
-                  “You’re only given one little spark of madness. you mustn’t
-                  lose it.”
+                  "You're only given one little spark of madness. you mustn't
+                  lose it."
                 </Card.Text>
                 <Button
                   variant="primary"
@@ -54,7 +54,7 @@ const About = () => {
             </Card>
           </Col>
 
-          <Col>
+          <Col xs={12} sm={6} md={4}>
             <br />
             <br />
             <Card className="cards">
@@ -74,10 +74,8 @@ const About = () => {
               </Card.Body>
             </Card>
           </Col>
-        </Row>
 
-        <Row>
-          <Col>
+          <Col xs={12} sm={6} md={4}>
             <br />
             <br />
             <Card className="cards">
@@ -96,7 +94,7 @@ const About = () => {
             </Card>
           </Col>
 
-          <Col>
+          <Col xs={12} sm={6} md={4}>
             <br />
             <br />
             <Card className="cards">
@@ -115,7 +113,7 @@ const About = () => {
             </Card>
           </Col>
 
-          <Col>
+          <Col xs={12} sm={6} md={4}>
             <br />
             <br />
             <Card className="cards">
@@ -123,7 +121,7 @@ const About = () => {
               <Card.Body>
                 <Card.Title>Tarun (Theo Weisz)</Card.Title>
                 <Card.Text>
-                <p>“People say nothing is impossible, but I do nothing every day.”</p> 
+                <p>"People say nothing is impossible, but I do nothing every day."</p> 
                 <p>–⁠ Winnie the Pooh</p>
                 </Card.Text>
                 <Button

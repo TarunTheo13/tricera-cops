@@ -8,8 +8,15 @@
   outline: transparent;
 }
 
-
 .end-button {
   background-color: white;
   color: white;
+}
+
+/* ========== RESPONSIVE: MOBILE ========== */
+@media (max-width: 767px) {
+  .doorOutline {
+    height: 40%;
+    width: 24%;
+  }
 }

@@ -15,3 +15,26 @@ a:link {
   width: 100%;
   height: auto;
 }
+
+/* ========== RESPONSIVE: TABLET / iPAD ========== */
+@media (max-width: 1024px) {
+  .playButton {
+    width: 60%;
+  }
+}
+
+/* ========== RESPONSIVE: MOBILE ========== */
+@media (max-width: 767px) {
+  .playButton {
+    width: 80%;
+    padding: 8px;
+  }
+}
+
+/* ========== RESPONSIVE: SMALL MOBILE ========== */
+@media (max-width: 480px) {
+  .playButton {
+    width: 100%;
+    padding: 5px;
+  }
+}

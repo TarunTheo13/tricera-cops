@@ -2,6 +2,19 @@
   width: 80%;
   height: 20%;
   border: transparent;
- 
 }
 
+/* ========== RESPONSIVE: TABLET / iPAD ========== */
+@media (max-width: 1024px) {
+  .cards {
+    width: 90%;
+  }
+}
+
+/* ========== RESPONSIVE: MOBILE ========== */
+@media (max-width: 767px) {
+  .cards {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
