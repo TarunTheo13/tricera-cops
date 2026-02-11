@@ -1,6 +1,7 @@
 import React from 'react'
 import './letter.css'
 import { Container, Row, Col, CloseButton } from "react-bootstrap";
+import TypewriterContent from "../typewriter/TypewriterContent";
 
 const Letter = (props) => {
   return props.displayingLetter ? (
@@ -15,7 +16,9 @@ const Letter = (props) => {
               >
                 <CloseButton />{" "}
               </button>
-              {props.children}
+              <TypewriterContent speed={15}>
+                {props.children}
+              </TypewriterContent>
             </div>
         </Row>
       </Container>
